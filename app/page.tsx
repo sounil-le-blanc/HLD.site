@@ -1,103 +1,201 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-gradient-to-b from-green-50 to-amber-50">
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center">
+          <img 
+            src="/rnp_original_logo.png" 
+            alt="Roots'n Permaculture" 
+            className="w-24 h-24 mx-auto mb-6" 
+          />
+          <h1 className="text-5xl font-bold text-green-800 mb-6">
+            Holistic Life Design
+          </h1>
+          <p className="text-xl text-green-700 mb-4">
+            Écologie de soi & Soin du monde
+          </p>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            Un stage ancré et accessible, pour celles et ceux qui souhaitent prendre un temps 
+            pour clarifier leur chemin de vie, faire le lien entre leur bien-être personnel 
+            et leur impact dans le monde.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+        <div className="mt-16 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div className="text-center">
+            <img src="/photo_sounil.jpg" alt="Sounil Le Blanc" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 className="text-2xl font-semibold text-green-800 mb-4">
+              Sounil Le Blanc
+            </h3>
+            <p className="text-gray-700">
+              Naturopathe et praticien du soin vivant
+            </p>
+          </div>
+          <div className="text-center">
+            <img src="/photo_rakesh.jpg" alt="Rakesh Rootsman Rak" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 className="text-2xl font-semibold text-green-800 mb-4">
+              Rakesh "Rootsman Rak"
+            </h3>
+            <p className="text-gray-700">
+              Designer en permaculture humaine
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
+            Programme
+          </h2>
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-semibold text-green-700">Approche basée sur :</h4>
+                <ul className="text-gray-700 mt-2 space-y-1">
+                  <li>• L'écoute profonde du corps et du vivant</li>
+                  <li>• La méthodologie du design en permaculture</li>
+                  <li>• Une dynamique collective bienveillante</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
+            Vous repartirez avec
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">Une vision claire</h4>
+              <p className="text-gray-700">de ce que vous souhaitez nourrir dans votre vie</p>
+            </div>
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">Des outils de design</h4>
+              <p className="text-gray-700">pour avancer à votre rythme</p>
+            </div>
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">Une expérience partagée</h4>
+              <p className="text-gray-700">dans un lieu inspirant et vivant</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
+            Château de Moulares
+          </h2>
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700">
+              Un lieu inspirant et vivant pour votre transformation personnelle
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16 text-center">
+          <h2 className="text-3xl font-bold text-green-800 mb-6">
+            Dates & Lieu
+          </h2>
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
+            <p className="text-xl font-semibold text-green-700 mb-2">
+              Fin Octobre 2025
+            </p>
+            <p className="text-lg text-gray-700">
+              Château de Moulares
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
+            Tarifs
+          </h2>
+          
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-center text-green-700 mb-6">
+              Stage (7 jours - 3 repas végétariens inclus)
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h4 className="font-semibold text-green-700 mb-2">Minimum</h4>
+                <p className="text-2xl font-bold text-green-800">250€</p>
+                <p className="text-gray-600">sans hébergement</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center border-2 border-green-500">
+                <h4 className="font-semibold text-green-700 mb-2">Average</h4>
+                <p className="text-2xl font-bold text-green-800">350€</p>
+                <p className="text-gray-600">sans hébergement</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h4 className="font-semibold text-green-700 mb-2">Full</h4>
+                <p className="text-2xl font-bold text-green-800">450€</p>
+                <p className="text-gray-600">sans hébergement</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-center text-green-700 mb-6">
+              Hébergement (7 nuits)
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h4 className="font-semibold text-green-700 mb-2">Dortoir</h4>
+                <p className="text-2xl font-bold text-green-800">105€</p>
+                <p className="text-gray-600">15€ x 7 nuits</p>
+                <div className="mt-3 pt-3 border-t border-gray-200">
+                  <p className="font-semibold">Total avec stage :</p>
+                  <p className="text-sm text-gray-600">355€ (min) / 455€ (avg) / 555€ (full)</p>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h4 className="font-semibold text-green-700 mb-2">Château - Simple</h4>
+                <p className="text-2xl font-bold text-green-800">210€</p>
+                <p className="text-gray-600">30€ x 7 nuits</p>
+                <div className="mt-3 pt-3 border-t border-gray-200">
+                  <p className="font-semibold">Total avec stage :</p>
+                  <p className="text-sm text-gray-600">460€ (min) / 560€ (avg) / 660€ (full)</p>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h4 className="font-semibold text-green-700 mb-2">Château - Double</h4>
+                <p className="text-2xl font-bold text-green-800">420€</p>
+                <p className="text-gray-600">60€ x 7 nuits</p>
+                <div className="mt-3 pt-3 border-t border-gray-200">
+                  <p className="font-semibold">Total avec stage :</p>
+                  <p className="text-sm text-gray-600">670€ (min) / 770€ (avg) / 870€ (full)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
+            Inscription
+          </h2>
+          <div className="text-center max-w-2xl mx-auto">
+            <p className="text-gray-700 mb-6">
+              Prêt(e) à vivre cette expérience transformatrice ?
+            </p>
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <p className="text-gray-600 mb-4">
+                Formulaire d'inscription à venir...
+              </p>
+              <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg">
+                S'inscrire au stage
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <footer className="mt-16 bg-green-800 text-white py-8">
+          <div className="container mx-auto px-4 text-center">
+            <h3 className="text-xl font-semibold mb-4">Contact</h3>
+            <p>rakeshaji@gmail.com</p>
+            <p>www.facebook.com/rootsmanrak</p>
+          </div>
+        </footer>
+      </div>
+    </main>
+  )
 }
