@@ -2,10 +2,10 @@ const activities = [
   {
     title: "Bilan naturopathique",
     desc: "Un point complet sur votre vitalité et vos besoins.",
-    img: "/images/naturopathie.jpg",
+    img: "/images/naturopathie.png",
   },
   {
-    title: "Jeûne doux & jus",
+    title: "jus de légumes et de fruits frais",
     desc: "Repos digestif accompagné et adapté à votre énergie.",
     img: "/images/orange-1921548_1280.jpg",
   },
@@ -37,7 +37,12 @@ const activities = [
   {
     title: "Remèdes naturels",
     desc: "Infusions, teintures, cataplasmes maison.",
-    img: "/images/remedes.jpg",
+    img: "/images/herbal.jpg",
+  },
+  {
+    title: "Jeûne doux",
+    desc: "Découvrir et experimenter le repos de l'organisme dans de bonne conditions",
+    img: "/images/jeûne.png",
   },
 ];
 

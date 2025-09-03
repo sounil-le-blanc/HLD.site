@@ -1,4 +1,5 @@
 import Programme from './components/programme';
+import Banniere from './components/banniere'
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
             et leur impact dans le monde.
           </p>
         </div>
+        </div>
+  <Banniere />
+<div className="container mx-auto px-4 py-16">
         <div className="mt-16 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="text-center">
             <img src="/photo_rakesh.jpg" alt="Rakesh Rootsman Rak" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
@@ -45,18 +49,21 @@ export default function Home() {
 
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
-            Approche basée sur :
+            Une approche basée sur :
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center p-6">
+              <img src="/logos/ecoute.png" alt="oreil stylisée symbolisant l'ecoute profonde" className="w-32 h-32 mx-auto  object-cover"/>
               <h4 className="font-semibold text-green-700 text-xl mb-3">L'écoute profonde</h4>
               <p className="text-gray-700">du corps et du vivant</p>
             </div>
             <div className="text-center p-6">
+              <img src="/logos/permaculture.png" alt="arbre en cercle symbolisant la permaculture" className="w-32 h-32 mx-auto  object-cover"/>
               <h4 className="font-semibold text-green-700 text-xl mb-3">La permaculture</h4>
               <p className="text-gray-700">méthodologie du design</p>
             </div>
             <div className="text-center p-6">
+              <img src="/logos/collectif.png" alt="cercle de bonhomme symbolisant le collectif" className="w-32 h-32 mx-auto  object-cover"/>
               <h4 className="font-semibold text-green-700 text-xl mb-3">Le collectif</h4>
               <p className="text-gray-700">Une dynamique bienveillante</p>
             </div>
