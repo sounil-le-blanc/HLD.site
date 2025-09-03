@@ -1,5 +1,6 @@
 import Programme from './components/programme';
 import Banniere from './components/banniere'
+import CardVertical from './components/cardvertical';
 
 export default function Home() {
   return (
@@ -52,22 +53,16 @@ export default function Home() {
             Une approche basée sur :
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-6">
-              <img src="/logos/ecoute.png" alt="oreil stylisée symbolisant l'ecoute profonde" className="w-32 h-32 mx-auto  object-cover"/>
-              <h4 className="font-semibold text-green-700 text-xl mb-3">L'écoute profonde</h4>
-              <p className="text-gray-700">du corps et du vivant</p>
-            </div>
-            <div className="text-center p-6">
-              <img src="/logos/permaculture.png" alt="arbre en cercle symbolisant la permaculture" className="w-32 h-32 mx-auto  object-cover"/>
-              <h4 className="font-semibold text-green-700 text-xl mb-3">La permaculture</h4>
-              <p className="text-gray-700">méthodologie du design</p>
-            </div>
-            <div className="text-center p-6">
-              <img src="/logos/collectif.png" alt="cercle de bonhomme symbolisant le collectif" className="w-32 h-32 mx-auto  object-cover"/>
-              <h4 className="font-semibold text-green-700 text-xl mb-3">Le collectif</h4>
-              <p className="text-gray-700">Une dynamique bienveillante</p>
-            </div>
-          </div>
+          <CardVertical icon="/logos/ecoute.png" title="L'écoute profonde">
+    du corps et du vivant
+  </CardVertical>
+              <CardVertical icon="/logos/permaculture.png" title="La permaculture">
+    méthodologie du design
+  </CardVertical>
+  <CardVertical icon="/logos/collectif.png" title="Le collectif">
+    Une dynamique bienveillante
+  </CardVertical>
+</div>
         </div>
 
          <Programme />
