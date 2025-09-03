@@ -1,44 +1,118 @@
-// components/Programme.tsx
+const activities = [
+  {
+    title: "Bilan naturopathique",
+    desc: "Un point complet sur votre vitalité et vos besoins.",
+    img: "/images/naturopathie.jpg",
+  },
+  {
+    title: "Jeûne doux & jus",
+    desc: "Repos digestif accompagné et adapté à votre énergie.",
+    img: "/images/orange-1921548_1280.jpg",
+  },
+  {
+    title: "Iridologie",
+    desc: "Lecture de l’iris pour décoder vos zones de surcharge.",
+    img: "/images/Ananda's left eye-EDIT.jpg",
+  },
+  {
+    title: "Balades botaniques",
+    desc: "Reconnaissance, cueillette et usages des plantes sauvages.",
+    img: "/images/botanique2.jpg",
+  },
+  {
+    title: "Toucher conscient",
+    desc: "Auto-massages, ancrage et réappropriation corporelle.",
+    img: "/images/massage.jpg",
+  },
+  {
+    title: "Yoga & respiration",
+    desc: "Pratiques douces, matinales et adaptées.",
+    img: "/images/yoga.jpg",
+  },
+  {
+    title: "Ateliers projet de vie",
+    desc: "Écologie intérieure, alignement, clarté, ancrage.",
+    img: "/images/design.jpg",
+  },
+  {
+    title: "Remèdes naturels",
+    desc: "Infusions, teintures, cataplasmes maison.",
+    img: "/images/remedes.jpg",
+  },
+];
 
 export default function Programme() {
   return (
-    <section className="bg-white py-12 px-6 md:px-16 lg:px-24">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-green-800 mb-6">
-          Et si vous preniez 7 jours pour réaligner votre vie ?
+    <section className="py-20 px-6 sm:px-12 lg:px-24 text-gray-800">
+      <div className="max-w-5xl mx-auto space-y-20">
+
+        {/* Hero */}
+        <div className="text-center space-y-6">
+          <h1 className="text-4xl sm:text-3xl font-extrabold text-emerald-700 leading-tight">
+            Et si vous preniez 7 jours pour réaligner votre vie ?
+          </h1>
+          <p className="text-xl text-gray-700">
+            Dans le calme vibrant du domaine de Moulares, ce stage propose une immersion dans les pratiques de soin profond du corps et de design vivant.
+          </p>
+          <p className="italic text-lg text-emerald-600">
+            Détox, régénération, exploration intérieure, projets de vie...
+          </p>
+        </div>
+
+        {/* Objectifs */}
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
+            Un accompagnement pas à pas pour :
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">Comprendre</h4>
+              <p className="text-gray-700">les déséquilibres de votre mode de vie</p>
+            </div>
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">Prendre soin</h4>
+              <p className="text-gray-700">de votre vitalité avec des pratiques simples et naturelles</p>
+            </div>
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">Redessiner</h4>
+              <p className="text-gray-700">votre quotidien avec clarté, ancrage et désir</p>
+            </div>
+          </div>
+        </div>
+
+
+        {/* Activités */}
+        <h2 className="text-3xl font-bold text-center text-emerald-700 mb-10">
+          🌿 Activités proposées
         </h2>
 
-        <p className="text-lg text-gray-700 mb-6">
-          Dans le calme vibrant du domaine de Moulares, ce stage propose une immersion dans les pratiques de soin profond du corps et de design vivant.
-        </p>
-
-        <p className="text-lg text-gray-700 mb-6">
-          Détox, régénération, exploration intérieure, projets de vie...
-        </p>
-
-        <p className="text-lg text-gray-700 mb-6">
-          Vous serez accompagné pas à pas pour :
-        </p>
-
-        <ul className="list-disc list-inside text-gray-700 mb-8 space-y-2">
-          <li>Comprendre les déséquilibres de votre mode de vie</li>
-          <li>Prendre soin de votre vitalité avec des pratiques simples et naturelles</li>
-          <li>Redessiner votre quotidien avec clarté, ancrage et désir</li>
-        </ul>
-
-        <h3 className="text-2xl font-semibold text-green-700 mb-4">Activités proposées :</h3>
-
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Bilan naturopathique personnalisé</li>
-          <li>Auto-massages & exploration du toucher conscient</li>
-          <li>Cure de jus et jeûne doux (optionnel)</li>
-          <li>Yoga matinal & respiration consciente</li>
-          <li>Iridologie et décodage des surcharges</li>
-          <li>Ateliers de réflexion : projet de vie, écologie intérieure, équilibre corps / mental / esprit</li>
-          <li>Balades botaniques & cueillette sauvage</li>
-          <li>Préparation de remèdes naturels (infusions, teintures, cataplasmes...)</li>
-          <li>Temps de silence, écoute et transformation collective</li>
-        </ul>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {activities.map((activity, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition duration-300"
+            >
+              <img
+                src={activity.img}
+                alt={activity.title}
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-semibold text-emerald-700">
+                  {activity.title}
+                </h3>
+                <p className="text-gray-600 mt-2">{activity.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Conclusion */}
+        <div className="text-center pt-10">
+          <p className="text-xl font-medium text-emerald-700 flex items-center justify-center gap-2">
+            <span className="text-2xl"></span>
+            <span>Une pause vivante, entre soin, autonomie et engagement joyeux.</span>
+          </p>
+        </div>
       </div>
     </section>
   );

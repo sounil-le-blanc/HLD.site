@@ -22,17 +22,7 @@ export default function Home() {
             et leur impact dans le monde.
           </p>
         </div>
-
         <div className="mt-16 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          <div className="text-center">
-            <img src="/photo_sounil.jpg" alt="Sounil Le Blanc" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
-            <h3 className="text-2xl font-semibold text-green-800 mb-4">
-              Sounil Le Blanc
-            </h3>
-            <p className="text-gray-700">
-              Naturopathe et praticien du soin vivant
-            </p>
-          </div>
           <div className="text-center">
             <img src="/photo_rakesh.jpg" alt="Rakesh Rootsman Rak" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-2xl font-semibold text-green-800 mb-4">
@@ -40,6 +30,15 @@ export default function Home() {
             </h3>
             <p className="text-gray-700">
               Designer en permaculture humaine
+            </p>
+          </div>
+          <div className="text-center">
+            <img src="/sounil.jpg" alt="Sounil Le Blanc" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <h3 className="text-2xl font-semibold text-green-800 mb-4">
+              Sounil Le Blanc
+            </h3>
+            <p className="text-gray-700">
+              Naturopathe et praticien du soin vivant
             </p>
           </div>
         </div>
