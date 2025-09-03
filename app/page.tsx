@@ -1,3 +1,5 @@
+import Programme from './components/programme';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-amber-50">
@@ -44,21 +46,25 @@ export default function Home() {
 
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
-            Programme
+            Approche basée sur :
           </h2>
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
-            <div className="space-y-6">
-              <div>
-                <h4 className="font-semibold text-green-700">Approche basée sur :</h4>
-                <ul className="text-gray-700 mt-2 space-y-1">
-                  <li>• L'écoute profonde du corps et du vivant</li>
-                  <li>• La méthodologie du design en permaculture</li>
-                  <li>• Une dynamique collective bienveillante</li>
-                </ul>
-              </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">L'écoute profonde</h4>
+              <p className="text-gray-700">du corps et du vivant</p>
+            </div>
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">La permaculture</h4>
+              <p className="text-gray-700">méthodologie du design</p>
+            </div>
+            <div className="text-center p-6">
+              <h4 className="font-semibold text-green-700 text-xl mb-3">Le collectif</h4>
+              <p className="text-gray-700">Une dynamique bienveillante</p>
             </div>
           </div>
         </div>
+
+         <Programme />
 
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
@@ -80,9 +86,20 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="mt-16 text-center">
+          <h2 className="text-3xl font-bold text-green-800 mb-6">
+            Dates
+          </h2>
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
+            <p className="text-xl font-semibold text-green-700 mb-2">
+              Du 25 au 31 Octobre 2025
+            </p>
+          </div>
+        </div>
+
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
-            Château de Moulares
+            Château du Vergnet
           </h2>
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-lg text-gray-700">
@@ -91,23 +108,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
-          <h2 className="text-3xl font-bold text-green-800 mb-6">
-            Dates & Lieu
-          </h2>
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-            <p className="text-xl font-semibold text-green-700 mb-2">
-              Fin Octobre 2025
-            </p>
-            <p className="text-lg text-gray-700">
-              Château de Moulares
-            </p>
-          </div>
-        </div>
-
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
-            Tarifs
+            Tarifs en conscience
           </h2>
           
           <div className="mb-8">
@@ -121,12 +124,12 @@ export default function Home() {
                 <p className="text-gray-600">sans hébergement</p>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center border-2 border-green-500">
-                <h4 className="font-semibold text-green-700 mb-2">Average</h4>
+                <h4 className="font-semibold text-green-700 mb-2">Médian</h4>
                 <p className="text-2xl font-bold text-green-800">350€</p>
                 <p className="text-gray-600">sans hébergement</p>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <h4 className="font-semibold text-green-700 mb-2">Full</h4>
+                <h4 className="font-semibold text-green-700 mb-2">Idéal</h4>
                 <p className="text-2xl font-bold text-green-800">450€</p>
                 <p className="text-gray-600">sans hébergement</p>
               </div>
@@ -140,29 +143,32 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
                 <h4 className="font-semibold text-green-700 mb-2">Dortoir</h4>
+                <p></p>
                 <p className="text-2xl font-bold text-green-800">105€</p>
                 <p className="text-gray-600">15€ x 7 nuits</p>
                 <div className="mt-3 pt-3 border-t border-gray-200">
-                  <p className="font-semibold">Total avec stage :</p>
-                  <p className="text-sm text-gray-600">355€ (min) / 455€ (avg) / 555€ (full)</p>
+                  <p className="font-semibold text-green-700">Total avec stage :</p>
+                  <p className="text-sm text-gray-600">355€ (min) / 455€ (med) / 555€ (id)</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <h4 className="font-semibold text-green-700 mb-2">Château - Simple</h4>
+                <h4 className="font-semibold text-green-700 mb-2">Château - Lit Simple</h4>
+                <p className="text-gray-600">(chambre de 2 à 4 lits)</p>
                 <p className="text-2xl font-bold text-green-800">210€</p>
                 <p className="text-gray-600">30€ x 7 nuits</p>
                 <div className="mt-3 pt-3 border-t border-gray-200">
-                  <p className="font-semibold">Total avec stage :</p>
-                  <p className="text-sm text-gray-600">460€ (min) / 560€ (avg) / 660€ (full)</p>
+                  <p className="font-semibold text-green-700">Total avec stage :</p>
+                  <p className="text-sm text-gray-600">460€ (min) / 560€ (med) / 660€ (id)</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <h4 className="font-semibold text-green-700 mb-2">Château - Double</h4>
+                <h4 className="font-semibold text-green-700 mb-2">Château - Lit double</h4>
+                <p className="text-gray-600">(chambre 1 lit)</p>
                 <p className="text-2xl font-bold text-green-800">420€</p>
                 <p className="text-gray-600">60€ x 7 nuits</p>
                 <div className="mt-3 pt-3 border-t border-gray-200">
-                  <p className="font-semibold">Total avec stage :</p>
-                  <p className="text-sm text-gray-600">670€ (min) / 770€ (avg) / 870€ (full)</p>
+                  <p className="font-semibold text-green-700">Total avec stage :</p>
+                  <p className="text-sm text-gray-600">670€ (min) / 770€ (med) / 870€ (id)</p>
                 </div>
               </div>
             </div>
