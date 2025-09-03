@@ -1,3 +1,5 @@
+import CardVertical from './cardvertical';
+
 const activities = [
   {
     title: "Bilan naturopathique",
@@ -69,20 +71,19 @@ export default function Programme() {
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Un accompagnement pas à pas pour :
           </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-6">
-              <h4 className="font-semibold text-green-700 text-xl mb-3">Comprendre</h4>
-              <p className="text-gray-700">les déséquilibres de votre mode de vie</p>
-            </div>
-            <div className="text-center p-6">
-              <h4 className="font-semibold text-green-700 text-xl mb-3">Prendre soin</h4>
-              <p className="text-gray-700">de votre vitalité avec des pratiques simples et naturelles</p>
-            </div>
-            <div className="text-center p-6">
-              <h4 className="font-semibold text-green-700 text-xl mb-3">Redessiner</h4>
-              <p className="text-gray-700">votre quotidien avec clarté, ancrage et désir</p>
-            </div>
-          </div>
+          
+
+<div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+  <CardVertical icon="/logos/idée.png" title="Comprendre">
+    les déséquilibres de votre mode de vie
+  </CardVertical>
+  <CardVertical icon="/logos/permaculture.png" title="Prendre soin">
+    de votre vitalité avec des pratiques simples et naturelles
+  </CardVertical>
+  <CardVertical icon="/logos/collectif.png" title="Redessiner">
+    votre quotidien avec clarté, ancrage et désir
+  </CardVertical>
+</div>
         </div>
 
 
