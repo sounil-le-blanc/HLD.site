@@ -7,10 +7,10 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-amber-50">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center">
-          <img 
-            src="/rnp_original_logo.png" 
-            alt="Roots'n Permaculture" 
-            className="w-24 h-24 mx-auto mb-6" 
+          <img
+            src="/rnp_original_logo.png"
+            alt="Roots'n Permaculture"
+            className="w-24 h-24 mx-auto mb-6"
           />
           <h1 className="text-5xl font-bold text-green-800 mb-6">
             Holistic Life Design
@@ -19,14 +19,14 @@ export default function Home() {
             Écologie de soi & Soin du monde
           </p>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Un stage ancré et accessible, pour celles et ceux qui souhaitent prendre un temps 
-            pour clarifier leur chemin de vie, faire le lien entre leur bien-être personnel 
+            Un stage ancré et accessible, pour celles et ceux qui souhaitent prendre un temps
+            pour clarifier leur chemin de vie, faire le lien entre leur bien-être personnel
             et leur impact dans le monde.
           </p>
         </div>
-        </div>
-  <Banniere />
-<div className="container mx-auto px-4 py-16">
+      </div>
+      <Banniere />
+      <div className="container mx-auto px-4 py-16">
         <div className="mt-16 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="text-center">
             <img src="/photo_rakesh.jpg" alt="Rakesh Rootsman Rak" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
@@ -53,20 +53,18 @@ export default function Home() {
             Une approche basée sur :
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <CardVertical icon="/logos/ecoute.png" title="L'écoute profonde">
-    du corps et du vivant
-  </CardVertical>
-              <CardVertical icon="/logos/permaculture.png" title="La permaculture">
-    méthodologie du design
-  </CardVertical>
-  <CardVertical icon="/logos/collectif.png" title="Le collectif">
-    Une dynamique bienveillante
-  </CardVertical>
-</div>
+            <CardVertical icon="/logos/ecoute.png" title="L'écoute profonde">
+              du corps et du vivant
+            </CardVertical>
+            <CardVertical icon="/logos/permaculture.png" title="La permaculture">
+              méthodologie du design
+            </CardVertical>
+            <CardVertical icon="/logos/collectif.png" title="Le collectif">
+              Une dynamique bienveillante
+            </CardVertical>
+          </div>
         </div>
-
-         <Programme />
-
+        <Programme />
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Vous repartirez avec
@@ -113,7 +111,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Tarifs en conscience
           </h2>
-          
+
           <div className="mb-8">
             <h3 className="text-xl font-semibold text-center text-green-700 mb-6">
               Stage (7 jours - 3 repas végétariens inclus)

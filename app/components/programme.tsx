@@ -1,4 +1,5 @@
 import CardVertical from './cardvertical';
+import Bandeau from './bandeau-chateau';
 
 const activities = [
   {
@@ -65,25 +66,26 @@ export default function Programme() {
             Détox, régénération, exploration intérieure, projets de vie...
           </p>
         </div>
+        <Bandeau />
 
         {/* Objectifs */}
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Un accompagnement pas à pas pour :
           </h2>
-          
 
-<div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-  <CardVertical icon="/logos/idée.png" title="Comprendre">
-    les déséquilibres de votre mode de vie
-  </CardVertical>
-  <CardVertical icon="/logos/permaculture.png" title="Prendre soin">
-    de votre vitalité avec des pratiques simples et naturelles
-  </CardVertical>
-  <CardVertical icon="/logos/collectif.png" title="Redessiner">
-    votre quotidien avec clarté, ancrage et désir
-  </CardVertical>
-</div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <CardVertical icon="/logos/idee.png" title="Comprendre">
+              les déséquilibres de votre mode de vie
+            </CardVertical>
+            <CardVertical icon="/logos/soin.png" title="Prendre soin">
+              de votre vitalité avec des pratiques simples et naturelles
+            </CardVertical>
+            <CardVertical icon="/logos/dessin.png" title="Redessiner">
+              votre quotidien avec clarté, ancrage et désir
+            </CardVertical>
+          </div>
         </div>
 
 
