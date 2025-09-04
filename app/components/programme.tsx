@@ -5,12 +5,12 @@ import Bandeau2 from './bandeau-stage';
 const activities = [
   {
     title: "Bilan naturopathique",
-    desc: "Un point complet sur votre vitalité et vos besoins.",
+    desc: "Un point complet sur votre vitalité et vos besoins",
     img: "/images/naturopathie.png",
   },
   {
-    title: "jus de légumes et de fruits frais",
-    desc: "Repos digestif accompagné et adapté à votre énergie.",
+    title: "Jus de légumes et de fruits frais",
+    desc: "Repos digestif accompagné et adapté à votre énergie",
     img: "/images/orange-1921548_1280.jpg",
   },
   {
