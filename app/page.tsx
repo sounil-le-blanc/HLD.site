@@ -234,14 +234,14 @@ export default function Home() {
               <p className="text-gray-700 mb-6">
                 Prêt(e) à vivre cette expérience transformatrice ?
               </p>
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <p className="text-gray-600 mb-4">
-                  Formulaire d&apos;inscription à venir...
-                </p>
-                <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg">
-                  S&apos;inscrire au stage
-                </button>
-              </div>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfniHUmQQl59DlueelZusyrOP22qL8uqham6OyLxUW5rfv65g/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg"
+                >
+                  S'inscrire au stage
+                </a>
             </div>
           </div>
 

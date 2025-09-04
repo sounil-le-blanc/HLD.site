@@ -233,16 +233,14 @@ export default function Home() {
               <p className="text-gray-700 mb-6">
                 Ready to experience this transformative journey?
               </p>
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <p className="text-gray-600 mb-4">
-                  Registration form coming soon...
-
-                  .
-                </p>
-                <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg">
-                  Register to the course
-                </button>
-              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScz0OdjMGhHSkrKBbo0L8ZHsCLsnBFCnymb9zgtWaGUCMZvHw/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg"
+              >
+                Register to the course
+              </a>
             </div>
           </div>
 
