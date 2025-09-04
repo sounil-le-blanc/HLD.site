@@ -1,6 +1,7 @@
 import CardVertical from './cardvertical';
 import Bandeau from './bandeau-chateau';
 import Bandeau2 from './bandeau-stage';
+import Bandeau3 from './bandeau-chateau2';
 
 const activities = [
   {
@@ -116,8 +117,8 @@ export default function Programme() {
           ))}
         </div>
         {/* Conclusion */}
-        <div className="text-center pt-10">
-          <h2 className="text-3xl font-bold text-center text-green-700 mb-8">
+        <div className="text-center pt-5">
+          <h2 className="text-3xl font-bold text-center text-green-700">
             Une pause vivante, entre soin, autonomie et engagement joyeux.
           </h2>
 

@@ -1,6 +1,8 @@
 import Programme from './components/programme';
 import Banniere from './components/banniere'
 import CardVertical from './components/cardvertical';
+import Bandeau3 from './components/bandeau-chateau2';
+import Bandeau from './components/bandeau-chateau';
 
 export default function Home() {
   return (
@@ -26,7 +28,7 @@ export default function Home() {
         </div>
       </div>
       <Banniere />
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8">
         <div className="mt-16 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="text-center">
             <img src="/photo_rakesh.jpg" alt="Rakesh Rootsman Rak" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
@@ -48,7 +50,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-20">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Une approche basée sur :
           </h2>
@@ -65,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         <Programme />
-        <div className="mt-16">
+        <div className="mt-2">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Vous repartirez avec
           </h2>
@@ -119,8 +121,36 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
 
-        <div className="mt-16">
+          {/* IMAGE */}
+          <div className="md:w-1/2 w-full">
+            <img
+              src="/images/chateau4.png" // ← mets ton image ici
+              alt="Château du Vergnet"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* TEXTE */}
+          <div className="md:w-1/2 w-full p-6">
+            <h3 className="text-2xl font-bold text-center text-green-800 mb-4">
+              Château du Vergnet
+            </h3>
+            <p className="text-gray-700 text-lg text-center leading-relaxed">
+              Un lieu inspirant, vivant et propice à la transformation personnelle.
+              Entouré de nature, ce château accueillera votre retraite dans une
+              atmosphère paisible et ressourçante.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-16">
+        <div className="mt-8">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Tarifs en conscience
           </h2>
