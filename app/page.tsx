@@ -66,7 +66,9 @@ export default function Home() {
             </CardVertical>
           </div>
         </div>
-        <Programme />
+      </div>
+      <Programme />
+      <div className="container mx-auto px-4 py-8">
         <div className="mt-2">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Vous repartirez avec
@@ -100,9 +102,9 @@ export default function Home() {
                 <p className="text-2xl font-bold text-green-800 mb-2">
                   Du 25 au 31 Octobre 2025
                 </p>
-                <p className="text-green-700 text-lg">
-                  7 jours / 6 nuits, arrivée le samedi soir.<br />
-                  Stage résidentiel, pension végétarienne complète.
+                <p className="text-gray-700 text-lg">
+                  7 jours et 7 nuits <br />
+                  arrivée le vendredi 24 à partir de 16h, et le 31 fin du stage le vendredi matin
                 </p>
               </div>
             </div>
@@ -136,16 +138,13 @@ export default function Home() {
 
           {/* TEXTE */}
           <div className="md:w-1/2 w-full p-6">
-            <h3 className="text-2xl font-bold text-center text-green-800 mb-4">
-              Château du Vergnet
-            </h3>
             <p className="text-gray-700 text-lg text-center leading-relaxed">
-              Un lieu inspirant, vivant et propice à la transformation personnelle.
-              Entouré de nature, ce château accueillera votre retraite dans une
-              atmosphère paisible et ressourçante.
+              Le Domaine du Vergnet se compose d’un parc arboré de 17 hectares, <br />
+              d’une maison de Maître  (« Le Château ») et d’une demeure annexe (« La Mainerie »).<br />
+              Surplombant le village de Moularès, cet écrin de quiétude ouvre portes et fenêtres sur le parc ensoleillé, tout en offrant la fraîcheur des bois, d’un ruisseau et d’une piscine d’été.<br />
+              Il est situé à 5 minutes de la RN88 entre le Tarn et l'Aveyron.
             </p>
           </div>
-
         </div>
       </div>
 
@@ -157,7 +156,7 @@ export default function Home() {
 
           <div className="mb-8">
             <h3 className="text-xl font-semibold text-center text-green-700 mb-6">
-              Stage (7 jours - 3 repas végétariens inclus)
+              Stage (7 jours - repas végétariens inclus)
             </h3>
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
@@ -185,7 +184,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
                 <h4 className="font-semibold text-green-700 mb-2">Dortoir</h4>
-                <p></p>
+                <p className="text-gray-600">(dans la Mainerie)</p>
                 <p className="text-2xl font-bold text-green-800">105€</p>
                 <p className="text-gray-600">15€ x 7 nuits</p>
                 <div className="mt-3 pt-3 border-t border-gray-200">

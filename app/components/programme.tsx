@@ -64,13 +64,16 @@ export default function Programme() {
           <p className="text-xl text-gray-700">
             Dans le calme vibrant du domaine de Moulares, ce stage propose une immersion dans les pratiques de soin profond du corps et de design vivant.
           </p>
-          <p className="italic text-lg text-emerald-600">
+          <p className="italic text-lg text-emerald-600 pb-4">
             Détox, régénération, exploration intérieure, projets de vie...
           </p>
         </div>
-        <Bandeau />
+      </div>
 
-        {/* Objectifs */}
+      <Bandeau />
+
+      {/* Objectifs */}
+      <div className="max-w-5xl mx-auto space-y-20">
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
             Un accompagnement pas à pas pour :
@@ -118,13 +121,13 @@ export default function Programme() {
         </div>
         {/* Conclusion */}
         <div className="text-center pt-5">
-          <h2 className="text-3xl font-bold text-center text-green-700">
+          <h2 className="text-3xl font-bold text-center text-green-700 pb-5">
             Une pause vivante, entre soin, autonomie et engagement joyeux.
           </h2>
 
         </div>
-        <Bandeau2 />
       </div>
+      <Bandeau2 />
     </section>
   );
 }
