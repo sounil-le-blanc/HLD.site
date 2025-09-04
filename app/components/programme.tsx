@@ -15,32 +15,32 @@ const activities = [
   },
   {
     title: "Iridologie",
-    desc: "Lecture de l&aposiris pour décoder vos zones de surcharge.",
+    desc: "Lecture de l'iris pour décoder vos zones de surcharge",
     img: "/images/Ananda's left eye-EDIT.jpg",
   },
   {
     title: "Balades botaniques",
-    desc: "Reconnaissance, cueillette et usages des plantes sauvages.",
+    desc: "Reconnaissance, cueillette et usages des plantes sauvages",
     img: "/images/botanique2.jpg",
   },
   {
     title: "Toucher conscient",
-    desc: "Auto-massages, ancrage et réappropriation corporelle.",
+    desc: "Auto-massages, ancrage et réappropriation corporelle",
     img: "/images/massage.jpg",
   },
   {
     title: "Yoga & respiration",
-    desc: "Pratiques douces, matinales et adaptées.",
+    desc: "Pratiques douces, matinales et adaptées",
     img: "/images/yoga.jpg",
   },
   {
     title: "Ateliers projet de vie",
-    desc: "Écologie intérieure, alignement, clarté, ancrage.",
+    desc: "Écologie intérieure, alignement, clarté, ancrage",
     img: "/images/design.jpg",
   },
   {
     title: "Remèdes naturels",
-    desc: "Infusions, teintures, cataplasmes maison.",
+    desc: "Infusions, teintures, cataplasmes maison",
     img: "/images/herbal.jpg",
   },
   {
@@ -121,7 +121,7 @@ export default function Programme() {
         {/* Conclusion */}
         <div className="text-center pt-5">
           <h2 className="text-3xl font-bold text-center text-green-700 pb-5">
-            Une pause vivante, entre soin, autonomie et engagement joyeux.
+            Une pause vivante, entre soin, autonomie et engagement joyeux
           </h2>
 
         </div>
