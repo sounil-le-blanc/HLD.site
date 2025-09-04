@@ -31,7 +31,7 @@ export default function Home() {
           <div className="text-center">
             <img src="/photo_rakesh.jpg" alt="Rakesh Rootsman Rak" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-2xl font-semibold text-green-800 mb-4">
-              Rakesh "Rootsman Rak"
+              Rakesh &quotRootsman Rak&quot
             </h3>
             <p className="text-gray-700">
               Designer en permaculture humaine
@@ -137,9 +137,9 @@ export default function Home() {
           {/* TEXTE */}
           <div className="md:w-1/2 w-full p-6">
             <p className="text-gray-700 text-lg text-center leading-relaxed">
-              Le Domaine du Vergnet se compose d’un parc arboré de 17 hectares, <br />
-              d’une maison de Maître  (« Le Château ») et d’une demeure annexe (« La Mainerie »).<br />
-              Surplombant le village de Moularès, cet écrin de quiétude ouvre portes et fenêtres sur le parc ensoleillé, tout en offrant la fraîcheur des bois, d’un ruisseau et d’une piscine d’été.<br />
+              Le Domaine du Vergnet se compose d&aposun parc arboré de 17 hectares, <br />
+              d&aposune maison de Maître  (&quot Le Château &quot) et d&aposune demeure annexe (&quot La Mainerie &quot).<br />
+              Surplombant le village de Moularès, cet écrin de quiétude ouvre portes et fenêtres sur le parc ensoleillé, tout en offrant la fraîcheur des bois, d&aposun ruisseau et d&aposune piscine d&aposété.<br />
               Il est situé à 5 minutes de la RN88 entre le Tarn et l'Aveyron.
             </p>
           </div>
@@ -227,7 +227,7 @@ export default function Home() {
                 Formulaire d'inscription à venir...
               </p>
               <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg">
-                S'inscrire au stage
+                S&aposinscrire au stage
               </button>
             </div>
           </div>

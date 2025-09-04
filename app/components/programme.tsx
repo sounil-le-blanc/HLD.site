@@ -1,7 +1,6 @@
 import CardVertical from './cardvertical';
 import Bandeau from './bandeau-chateau';
 import Bandeau2 from './bandeau-stage';
-import Bandeau3 from './bandeau-chateau2';
 
 const activities = [
   {
@@ -16,7 +15,7 @@ const activities = [
   },
   {
     title: "Iridologie",
-    desc: "Lecture de l’iris pour décoder vos zones de surcharge.",
+    desc: "Lecture de l&aposiris pour décoder vos zones de surcharge.",
     img: "/images/Ananda's left eye-EDIT.jpg",
   },
   {
