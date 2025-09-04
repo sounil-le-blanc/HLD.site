@@ -70,31 +70,44 @@ export default function Home() {
             Vous repartirez avec
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-6">
-              <h4 className="font-semibold text-green-700 text-xl mb-3">Une vision claire</h4>
-              <p className="text-gray-700">de ce que vous souhaitez nourrir dans votre vie</p>
-            </div>
-            <div className="text-center p-6">
-              <h4 className="font-semibold text-green-700 text-xl mb-3">Des outils de design</h4>
-              <p className="text-gray-700">pour avancer à votre rythme</p>
-            </div>
-            <div className="text-center p-6">
-              <h4 className="font-semibold text-green-700 text-xl mb-3">Une expérience partagée</h4>
-              <p className="text-gray-700">dans un lieu inspirant et vivant</p>
-            </div>
+            <CardVertical icon="/logos/vision.png" title="Une vision claire">
+              de ce que vous souhaitez nourrir dans votre vie
+            </CardVertical>
+            <CardVertical icon="/logos/design.png" title="Des outils de design">
+              pour avancer à votre rythme
+            </CardVertical>
+            <CardVertical icon="/logos/shared.png" title="Une expérience partagée">
+              dans un lieu inspirant et vivant
+            </CardVertical>
           </div>
         </div>
 
         <div className="mt-16 text-center">
-          <h2 className="text-3xl font-bold text-green-800 mb-6">
-            Dates
-          </h2>
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-            <p className="text-xl font-semibold text-green-700 mb-2">
-              Du 25 au 31 Octobre 2025
-            </p>
+          <h2 className="text-3xl font-bold text-green-800 mb-6">Dates</h2>
+
+          <div className="w-full max-w-3xl mx-auto px-4">
+
+            <div className="mx-auto max-w-5xl bg-green-50 border border-green-200 shadow-md rounded-2xl px-8 py-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+              <img
+                src="/logos/calendar.png"
+                alt="Calendrier"
+                className="w-24 h-24 object-contain"
+              />
+
+              <div className="text-center">
+                <p className="text-2xl font-bold text-green-800 mb-2">
+                  Du 25 au 31 Octobre 2025
+                </p>
+                <p className="text-green-700 text-lg">
+                  7 jours / 6 nuits, arrivée le samedi soir.<br />
+                  Stage résidentiel, pension végétarienne complète.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+
+
 
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-8">
