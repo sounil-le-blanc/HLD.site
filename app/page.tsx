@@ -245,6 +245,7 @@ export default function Home() {
             </div>
           </div>
 
+
           <footer className="mt-16 bg-green-800 text-white py-8">
             <div className="container mx-auto px-4 text-center">
               <h3 className="text-xl font-semibold mb-4">Contact</h3>
