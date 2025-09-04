@@ -138,7 +138,7 @@ export default function Home() {
           <div className="md:w-1/2 w-full p-6">
             <p className="text-gray-700 text-lg text-center leading-relaxed">
               Le Domaine du Vergnet se compose d&apos;un parc arboré de 17 hectares, <br />
-              d&apos;une maison de Maître  (&quot;Le Château&quot;) et d&aposune demeure annexe (&quot;La Mainerie&quot;).<br />
+              d&apos;une maison de Maître  (&quot;Le Château&quot;) et d&apos;une demeure annexe (&quot;La Mainerie&quot;).<br />
               Surplombant le village de Moularès, cet écrin de quiétude ouvre portes et fenêtres sur le parc ensoleillé, tout en offrant la fraîcheur des bois, d&apos;un ruisseau et d&apos;une piscine d&apos;été.<br />
               Il est situé à 5 minutes de la RN88 entre le Tarn et l&apos;Aveyron.
             </p>
