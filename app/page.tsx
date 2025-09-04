@@ -1,8 +1,6 @@
 import Programme from './components/programme';
 import Banniere from './components/banniere'
 import CardVertical from './components/cardvertical';
-import Bandeau3 from './components/bandeau-chateau2';
-import Bandeau from './components/bandeau-chateau';
 
 export default function Home() {
   return (
