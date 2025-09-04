@@ -1,6 +1,6 @@
-import CardVertical from './cardvertical';
-import Bandeau from './bandeau-chateau';
-import Bandeau2 from './bandeau-stage';
+import CardVertical from '../../components/cardvertical';
+import Bandeau from '../../components/bandeau-chateau';
+import Bandeau2 from '../../components/bandeau-stage';
 
 const activities = [
   {

@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
 import Programme from './components/programme';
-import Banniere from './components/banniere'
-import CardVertical from './components/cardvertical';
+import Banniere from '../components/banniere'
+import CardVertical from '../components/cardvertical';
 
 
 export default function Home() {
